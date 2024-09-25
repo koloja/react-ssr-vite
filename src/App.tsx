@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route, Routes} from 'react-router-dom';
-import Container from './components/Contianer';
+import Container from '@/components/Contianer';
 
 const App: React.FC = () => {
     return (
