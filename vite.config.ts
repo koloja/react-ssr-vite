@@ -17,5 +17,5 @@ const Logger: Plugin = {
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react(), Logger],
-    resolve: {alias: {'@': path.resolve(__dirname, 'src/client')}}
+    resolve: {alias: {'@': path.resolve(__dirname, 'src')}}
 });
