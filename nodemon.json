@@ -1,0 +1,6 @@
+{
+    "watch": ["index.ts", "src/api"],
+    "ext": "ts",
+    "ignore": ["node_modules"],
+    "exec": "tsx index.ts"
+}

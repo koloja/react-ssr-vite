@@ -1,0 +1,6 @@
+/* root styles aka index.css on normal vite projects */
+
+body {
+    background-color: white;
+    color: black;
+}
