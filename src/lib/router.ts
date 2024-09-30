@@ -8,7 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default async (app: express.Express): Promise<number> => {
     let rnum = 0;
-    const rpath = path.join(__dirname, '../api');
+    const rpath = path.join(__dirname, '../routes');
     const files = await fs.readdir(rpath);
     for (const file of files) {
         const filePath = path.join(rpath, file);

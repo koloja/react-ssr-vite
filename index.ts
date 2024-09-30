@@ -5,6 +5,8 @@ import {StatusCodes} from 'http-status-codes';
 import consola from 'consola';
 import chalk from 'chalk';
 import pkg from './package.json';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 import router from './src/lib/router';
 
 // constants
@@ -13,7 +15,8 @@ const constants = {
     port: process.env.PORT || 2121,
     base: process.env.BASE || '/',
     ABORT_DELAY: 10000,
-    UNIX: Date.now()
+    UNIX: Date.now(),
+    DIRNAME: path.dirname(fileURLToPath(import.meta.url))
 };
 
 // cached production assests
